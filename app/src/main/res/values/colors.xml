@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <!-- ColorPrimary-> color de toolbar-->
+    <color name="colorPrimary">#EC326C</color>
+    <!-- ColorPrimaryDark-> color de barra de notificaciones-->
+    <color name="colorPrimaryDark">#2D2E37</color>
+    <!-- ColorAccent-> color de resaltar (texto botones y detalles varios)-->
+    <color name="colorAccent">#9A91F1</color>
+    <color name="colorAccentPink">#EB3D7A</color>
+    <color name="colorAccentDarkPurple">#542A8C</color>
 </resources>
