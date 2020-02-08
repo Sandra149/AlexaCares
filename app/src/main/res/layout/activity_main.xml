@@ -7,4 +7,59 @@
     android:background="@drawable/background_gradient"
     tools:context=".MainActivity">
 
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:padding="10dp"
+                android:text="@string/location"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/degrees"
+                android:textColor="@android:color/white"
+                android:textSize="48sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="2dp"
+                android:text="@string/circle"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="4dp"
+                android:text="@string/weather"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

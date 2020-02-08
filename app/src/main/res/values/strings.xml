@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AlexaCares</string>
+    <string name="location">Madrid</string>
+    <string name="degrees">X</string>
+    <string name="circle">º</string>
+    <string name="weather">YYYYYYY</string>
+
 </resources>
