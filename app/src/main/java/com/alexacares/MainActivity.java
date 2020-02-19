@@ -5,7 +5,10 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.alexacares.weather.Weather;
+import com.alexacares.weather.WeatherObserver;
+
+public class MainActivity extends AppCompatActivity implements WeatherObserver {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,5 +26,10 @@ public class MainActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowTitleEnabled(false);
         }
+    }
+
+    @Override
+    public void update(Weather weather) {
+
     }
 }
