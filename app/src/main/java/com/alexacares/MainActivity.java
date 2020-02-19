@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.alexacares.weather.Weather;
 import com.alexacares.weather.WeatherObserver;
+import com.alexacares.weather.WeatherHelper;
 
 public class MainActivity extends AppCompatActivity implements WeatherObserver {
 
@@ -15,6 +16,11 @@ public class MainActivity extends AppCompatActivity implements WeatherObserver {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initToolbar();
+
+        WeatherHelper weatherHelper = new WeatherHelper();
+        weatherHelper.register(this);
+
+        weatherHelper.get();
     }
 
     /**

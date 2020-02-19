@@ -6,7 +6,9 @@ public class WeatherHelper {
 
     private WeatherObserver observer;
 
-    public WeatherHelper(WeatherObserver observer) {
+    public WeatherHelper() {}
+
+    public void register(WeatherObserver observer) {
         this.observer = observer;
     }
 
